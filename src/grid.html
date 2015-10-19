@@ -1,0 +1,20 @@
+<template>
+  <link rel="stylesheet" href="../styles/styles.css">
+  
+  <section class="au-animate">
+      <h2>${heading}</h2>
+      <br>
+      <br>
+ 
+      <br>
+      <br>
+      <kendo-grid kend-grid.ref="grid" read.call="getData($event)" auto-bind.bind="false" pageable.bind="true" sortable.bind="true">
+        <kendo-grid-col title="Name" field="Name"></kendo-grid-col>
+        <kendo-grid-col title="Id" field="Id">
+            This is a template ${ $item.Id }
+        </kendo-grid-col>
+      </kendo-grid>
+
+  </section>
+
+</template>
